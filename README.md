@@ -13,9 +13,9 @@ FFMPEG (add the binary folder, e.g. ¡°C:\Program Files\ffmpeg-20190625-dd662bb-w
 
 
 ## 2 Running
+Due to limitaion of file size, the whole source code is stored in the BaiduNetdisk. First, download the whole simluation source code from the link under the folder Pano_experiments\Simulation_Statistics. Second, enter the
+directory of the source code and follow the running commands below.
 ## (1) Componenet Running
-Due to limitaion of file size, the whole source code is stored in the BaiduNetdisk.
-
 ### 1)  Prepare the programs and data
 All the Matlab programs are in root folder ¡°/¡±. The videos are in the folder ¡°/videos¡±, the trajectory data is in two format is in ¡°/traj¡± and ¡°viewpoint¡±, the pre-calculated tile depth data is in ¡°/DepthMap¡±. 
 ### 2)  cut chunks
