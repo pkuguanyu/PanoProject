@@ -1,17 +1,19 @@
 # PanoProject
-The simulation source code is under the folder Pano_experiments\Simulation_Statistics. And now we supply methods of push button  running or component running.  
-The system source code is under the folder Pano_system\SystemComponent. And we only supply each component core source code of the Pano system.  
-The following shows the requirements of the system and simulation comparision and the two running method of the simluation source code.  
+The simulation source code is under the folder Pano_experiments\Simulation_Statistics. And now we supply methods of push button  running or component running.
+The system source code is under the folder Pano_system\SystemComponent. And we only supply each component core source code of the Pano system.
+The following shows the requirements of the system and simulation comparision and the two running method of the simluation source code.
 
 ## 1 Requirements
-Windows 10 Professional Edition 1709;  
-Matlab(R2015a or higher) with Parallel Computing Toolbox and Image Processing Toolbox;  
-Any C++ IDE(Visual Studio 2015 is recommended);  
-FFMPEG(add the binary folder, e.g. ¡°C:\Program Files\ffmpeg-20190625-dd662bb-win64-static\bin¡±, to system PATH.)  
-Unity 2018.2 Pro Edition or above  
-.Net Framework 4.6.1 or above  
+.Net Framework 4.6.1 or Above.  
+Unity 2018.2 Pro Edition or Above. 
+Windows 10 Professional Edition 1709.  
+Any C++ IDE (Visual Studio 2015 is recommended).  
+Matlab (R2015a or higher) with Parallel Computing Toolbox and Image Processing Toolbox.  
+FFMPEG (add the binary folder, e.g. ¡°C:\Program Files\ffmpeg-20190625-dd662bb-win64-static\bin¡±, to system PATH.).  
 
-## 2 Componenet Running
+
+## 2.Running
+## 1. Componenet Running
 Due to limitaion of file size, the whole source code is stored in the BaiduNetdisk.
 
 ### 1)  Prepare the programs and data
@@ -25,7 +27,5 @@ If you¡¯re using Visual Studio 2015, open the project file ¡°/tilingDP/tilingDP.
 ### 5)  run the simulation
 Set the variable calcTileVal to 0 in ¡°/main.m¡±, then run ¡°/main.m¡±. The results about PSPNR and bitrate consumption per user per chunk are stored in ¡°/baselineResult¡± and ¡°/PanoResult¡± for further analyzation. ¡°/main.m¡± visualizes a comparison between baseline and Pano in Matlab window.
 
-##Or
-
-## 2 Push Button Running
+## 2. Push Button Running
 ### Just run the batch.bat
