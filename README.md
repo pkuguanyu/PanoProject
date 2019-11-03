@@ -12,8 +12,8 @@ Matlab (R2015a or higher) with Parallel Computing Toolbox and Image Processing T
 FFMPEG (add the binary folder, e.g. ¡°C:\Program Files\ffmpeg-20190625-dd662bb-win64-static\bin¡±, to system PATH.).  
 
 
-## 2.Running
-## 1. Componenet Running
+## 2 Running
+## (1) Componenet Running
 Due to limitaion of file size, the whole source code is stored in the BaiduNetdisk.
 
 ### 1)  Prepare the programs and data
@@ -27,5 +27,5 @@ If you¡¯re using Visual Studio 2015, open the project file ¡°/tilingDP/tilingDP.
 ### 5)  run the simulation
 Set the variable calcTileVal to 0 in ¡°/main.m¡±, then run ¡°/main.m¡±. The results about PSPNR and bitrate consumption per user per chunk are stored in ¡°/baselineResult¡± and ¡°/PanoResult¡± for further analyzation. ¡°/main.m¡± visualizes a comparison between baseline and Pano in Matlab window.
 
-## 2. Push Button Running
+## (2) Push Button Running
 ### Just run the batch.bat
