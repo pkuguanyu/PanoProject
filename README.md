@@ -6,7 +6,7 @@ The following shows the requirements of the system and simulation comparision an
 ## 1 Requirements
 .Net Framework 4.6.1 or Above.  
 Unity 2018.2 Pro Edition or Above. 
-Windows 10 Professional Edition 1709.  
+Windows 10 Professional Edition 1709.    
 Any C++ IDE (Visual Studio 2015 is recommended).  
 Matlab (R2015a or higher) with Parallel Computing Toolbox and Image Processing Toolbox.  
 FFMPEG (add the binary folder, e.g. ¡°C:\Program Files\ffmpeg-20190625-dd662bb-win64-static\bin¡±, to system PATH.).  
