@@ -1,18 +1,29 @@
 # PanoProject
+
+## 0 Abstract
+This project is the code for Pano Project (corresponding to the SIGCOMM paper "Pano: Optimizing 360 Video Streaming with a Better Understanding of Quality Perception").
+Link of SIGCOMM 2019: http://conferences.sigcomm.org/sigcomm/2019/
+Link of our paper: https://dlnext.acm.org/doi/abs/10.1145/3341302.3342063
+
+This project has two part:
+(1) The simulation source code is for readers to regenerate the main experimental results in the paper. We present the source code of both Pano and the baseline here, so readers can make a comparison easily.
+(2) The system source code is for readers to understand how we implemented a "user percevied quality driven" 360 video streaming. We present all modules in our system here. But we acknowledge that it still has not reached the level for commercial use.
+
+## 1 Location
 The simulation source code is under the folder Pano_experiments\Simulation_Statistics. And now we supply methods of push button  running or component running.
 The system source code is under the folder Pano_system\SystemComponent. And we only supply each component core source code of the Pano system.
 The following shows the requirements of the system and simulation comparision and the two running method of the simluation source code.
 
-## 1 Requirements
+## 2 Requirements
 .Net Framework 4.6.1 or Above.  
 Unity 2018.2 Pro Edition or Above.   
 Windows 10 Professional Edition 1709.    
 Any C++ IDE (Visual Studio 2015 is recommended).  
 Matlab (R2015a or higher) with Parallel Computing Toolbox and Image Processing Toolbox.  
-FFMPEG (add the binary folder, e.g. ¡°C:\Program Files\ffmpeg-20190625-dd662bb-win64-static\bin¡±, to system PATH.).  
+FFMPEG (add the binary folder, e.g. Â¡Â°C:\Program Files\ffmpeg-20190625-dd662bb-win64-static\binÂ¡Â±, to system PATH.).  
 
 
-## 2 Running
+## 3 Running
 Due to limitaion of file size, the whole source code is stored in the BaiduNetdisk. First, download the whole simluation source code from the link under the folder Pano_experiments\Simulation_Statistics. Second, enter the
 directory of the source code and follow the running commands below.
 ## (1) Componenet Running
@@ -28,3 +39,10 @@ Run the C++ program "/main.cpp" to group similar tiles. Before running, modify t
 Run "/main.m" to simulate grid tiling baseline and Pano cli
 ## (2) Automatic Running
 ### Run the batch.bat
+
+## 4 Contact us if questions
+If you have any questions with this project, or you have some questions about the paper, feel free to contact us:
+Yu Guan: shanxigy@pku.edu.cn
+Chengyuan Zheng: 1801213770@pku.edu.cn
+
+If you have any suggestion for this code, please also feel free to contact us. We will take our time to update the codes.
