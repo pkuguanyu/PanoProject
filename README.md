@@ -17,15 +17,14 @@ Due to limitaion of file size, the whole source code is stored in the BaiduNetdi
 directory of the source code and follow the running commands below.
 ## (1) Componenet Running
 ### 1)  Prepare the programs and data
-All the Matlab programs are in root folder ¡°/¡±. The videos are in the folder ¡°/videos¡±, the trajectory data is in two format is in ¡°/traj¡± and ¡°viewpoint¡±, the pre-calculated tile depth data is in ¡°/DepthMap¡±. 
-### 2)  cut chunks
-Run ¡°/cutChunk.m¡± to cut the videos to one-second chunks in ¡°/videos¡±.
-### 3)  calculate tile valueness
-Set the variable calcTileVal to 1 in ¡°/main.m¡±, then run ¡°/main.m¡± to calculate the valueness of each tile in each chunk. The result is stored in ¡°/ratio¡±.
-### 4)  generate tiling scheme
-If you¡¯re using Visual Studio 2015, open the project file ¡°/tilingDP/tilingDP.sln¡± and run it, otherwise you should build a new project in your IDE and copy ¡°/tilingDP/main.cpp¡± into it, modify the data path at line 254/358/380 as appropriate. The tiling scheme is stored in ¡°/tiling1004¡±.
-### 5)  run the simulation
-Set the variable calcTileVal to 0 in ¡°/main.m¡±, then run ¡°/main.m¡±. The results about PSPNR and bitrate consumption per user per chunk are stored in ¡°/baselineResult¡± and ¡°/PanoResult¡± for further analyzation. ¡°/main.m¡± visualizes a comparison between baseline and Pano in Matlab window.
-
-## (2) Push Button Running
-### Just run the batch.bat
+All the Matlab programs are in root folder "/". The data used are as follows: the videos in "/videos", the pre-calculated depth-of-field data in "/DepthMap", the viewpoint trajectory in "/traj" and "/viewpoint".
+### 2)  Split the videos into one-second chunks
+Run "/cutChunk.m" to split the videos to one-second chunks in "/videos/setID/videoID/chunkID.mp4".
+### 3)  Calculate quality-bitrate efficiency
+Run "/getAllTileValueness.m" to calculate the efficiency score of each tile. The efficiency score is stored in "/ratio/setID/videoID/userID/frameID_Value_SMSE.txt".
+### 4)  Group similar tiles
+Run the C++ program "/main.cpp" to group similar tiles. Before running, modify the relative path at line 254/358/380 as appropriate. The result stored in "/tiling1004" consists of the index, the start and end row, the start column and end column of each grouped tile.
+### 5)  Run the simulation
+Run "/main.m" to simulate grid tiling baseline and Pano cli
+## (2) Automatic Running
+### Run the batch.bat
