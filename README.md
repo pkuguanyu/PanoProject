@@ -46,7 +46,9 @@ Run "/main.m" to simulate grid tiling baseline and Pano cli
 
 ## 4 Contact us if questions
 If you have any questions with this project, or you have some questions about the paper, feel free to contact us:
+
 Yu Guan: shanxigy@pku.edu.cn
+
 Chengyuan Zheng: 1801213770@pku.edu.cn
 
 If you have any suggestion for this code, please also feel free to contact us. We will take our time to update the codes.
