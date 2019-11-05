@@ -8,7 +8,9 @@ Link of SIGCOMM 2019: http://conferences.sigcomm.org/sigcomm/2019/
 Link of our paper: https://dlnext.acm.org/doi/abs/10.1145/3341302.3342063
 
 This project has two part:
+
 (1) The simulation source code is for readers to regenerate the main experimental results in the paper. We present the source code of both Pano and the baseline here, so readers can make a comparison easily.
+
 (2) The system source code is for readers to understand how we implemented a "user percevied quality driven" 360 video streaming. We present all modules in our system here. But we acknowledge that it still has not reached the level for commercial use.
 
 ## 1 Location
