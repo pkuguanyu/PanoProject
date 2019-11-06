@@ -42,7 +42,7 @@ Run the C++ program "/main.cpp" to group similar tiles. Before running, modify t
 ### 5)  Run the simulation
 Run "/main.m" to simulate grid tiling baseline and Pano client-side mechanism. The PSPNR and bandwidth consumption per user per chunk are stored in "/baselineResult" and "/PanoResult". A PSPNR-bandwidth graph like Fig 18 is drawed based on the simulation result.
 To observe Pano tiling and allocation result, you should put a breakpoint at "/Pano.m" line 188. When pausing, paste and run the following commands in console:
-'''
+```
 viewedTilesSize = [];
 viewedTileMSE = [];
 for i=1:nTiles
@@ -60,7 +60,7 @@ disp('bitrate of each tile: (kbit/s)');
 disp(viewedTilesSize);
 disp('PMSE * number of pixels:');
 disp(viewedTileMSE);
-'''
+```
 
 ## (2) Automatic Running
 ### Run the batch.bat
