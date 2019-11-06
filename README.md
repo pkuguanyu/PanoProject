@@ -36,8 +36,8 @@ All the Matlab programs are in root folder "/". The data used are as follows: th
 ### 2)  Split the videos to one-second chunks
 Run "/cutChunk.m" to split the videos to one-second chunks in "/videos/setID/videoID/chunkID.mp4".
 ### 3)  Calculate quality-bitrate efficiency
-### Run "/getAllTileValueness.m" to calculate the efficiency score of each tile. The efficiency score is stored in "/ratio/setID/videoID/userID/frameID_Value_SMSE.txt".
-4)  group similar tiles
+Run "/getAllTileValueness.m" to calculate the efficiency score of each tile. The efficiency score is stored in "/ratio/setID/videoID/userID/frameID_Value_SMSE.txt".
+### 4)  group similar tiles
 Run the C++ program "/main.cpp" to group similar tiles. Before running, modify the relative path at line 254/358/380 as appropriate. The result stored in "/tiling1004" consists of the index, the start and end row, the start column and end column of each grouped tile.
 ### 5)  Run the simulation
 Run "/main.m" to simulate grid tiling baseline and Pano client-side mechanism. The PSPNR and bandwidth consumption per user per chunk are stored in "/baselineResult" and "/PanoResult". A PSPNR-bandwidth graph like Fig 18 is drawed based on the simulation result.
@@ -61,6 +61,7 @@ disp(viewedTilesSize);
 disp('PMSE * number of pixels:');
 disp(viewedTileMSE);
 '''
+
 ## (2) Automatic Running
 ### Run the batch.bat
 
