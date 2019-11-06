@@ -25,6 +25,7 @@ Run "/getAllTileValueness.m" to calculate the efficiency score of each tile. The
 ### 4)  Group similar tiles
 Run the C++ program "/main.cpp" to group similar tiles. Before running, modify the relative path at line 254/358/380 as appropriate. The result stored in "/tiling1004" consists of the index, the start and end row, the start column and end column of each grouped tile.
 ### 5)  Run the simulation
-Run "/main.m" to simulate grid tiling baseline and Pano cli
+Run "/main.m" to simulate grid tiling baseline and Pano client-side mechanism. The program displays Pano tiling and allocation result of the first chunk by default, which can be specified at "/Pano.m" line 185. The PSPNR and bandwidth consumption per user per chunk are stored in "/baselineResult"
+and "/PanoResult". A PSPNR-bandwidth graph like Fig 18 is drawed based on the simulation result.
 ## (2) Automatic Running
 ### Run the batch.bat
