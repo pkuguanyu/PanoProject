@@ -72,6 +72,6 @@ Yu Guan: shanxigy@pku.edu.cn
 
 Chengyuan Zheng: zhengchengyuan@pku.edu.cn
 
-Jinyu Yin : y-j.y@qq.com
+Jinyu Yin : yinjinyu@pku.edu.cn
 
 If you have any suggestion for this code, please also feel free to contact us. We will take our time to update the codes.
